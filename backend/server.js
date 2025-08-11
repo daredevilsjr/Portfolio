@@ -6,8 +6,8 @@ const app = express();
 
 dotenv.config();
 const PORT = process.env.PORT || 5000;
-const authRoute = require('./routes/authRoute')
-
+const authRoute = require('./routes/authRoute');
+const adminRoute = require('./routes/adminRoute');
 // Middleware
 app.use(express.json());
 app.use(express.urlencoded({ extended: true, limit: "10mb" }));
@@ -17,7 +17,8 @@ app.use(cookieParser());
 app.get("/api/health", (req, res) => {
   res.json({ message: "Server is running!" });
 });
-app.use('/admin', authRoute);
+app.use('/auth', authRoute);
+app.use('/admin', adminRoute);
 // Error handling middleware
 app.use((err, req, res, next) => {
   console.error(err.stack);
