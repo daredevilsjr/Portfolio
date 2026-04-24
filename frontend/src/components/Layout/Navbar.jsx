@@ -96,7 +96,7 @@ const Navbar = () => {
           </div>
 
           {/* Mobile Menu Button */}
-          <div className="lg:hidden flex items-center">
+          <div className="lg:hidden flex items-center ml-2 sm:ml-4">
             <button
               onClick={() => setIsOpen(!isOpen)}
               className="p-2 rounded-xl bg-oxford-blue/50 border border-yale-blue/40 hover:border-mikado-yellow transition-all duration-300 group"

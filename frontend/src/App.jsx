@@ -16,6 +16,8 @@ import AdminBlog from './pages/admin/AdminBlog';
 import AdminContacts from './pages/admin/AdminContacts';
 import ProtectedRoute from './components/ProtectedRoute';
 import ThemeInitializer from './components/ThemeInitializer';
+import Privacy from './pages/Privacy';
+import Terms from './pages/Terms';
 
 function App() {
   return (
@@ -47,6 +49,8 @@ function App() {
               <Route path="contacts" element={<AdminContacts />} />
             </Route>
           </Route>
+          <Route path="/privacy" element={<Privacy />} />
+          <Route path="/terms" element={<Terms />} />
         </Routes>
       </div>
     </Router>
