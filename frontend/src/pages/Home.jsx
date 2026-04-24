@@ -102,7 +102,7 @@ const Home = () => {
                   transition={{ delay: 0.8, duration: 0.8 }}
                   className="text-xl text-white/70 leading-relaxed max-w-2xl"
                 >
-                  {profile?.bio || 'Passionate full-stack developer with expertise in MERN stack and strong problem-solving skills.'}
+                  {profile?.bio || 'Passionate software developer with expertise in MERN stack and strong problem-solving skills.'}
                 </motion.p>
               </div>
 
@@ -131,15 +131,34 @@ const Home = () => {
                 </Link>
                 
                 {profile?.resume?.url && (
-                  <a
-                    href={profile.resume.url}
-                    target="_blank"
-                    rel="noopener noreferrer"
+                  <button
+                    onClick={async () => {
+                      try {
+                        const response = await fetch(profile.resume.url);
+                        const blob = await response.blob();
+
+                        const url = window.URL.createObjectURL(blob);
+
+                        const link = document.createElement('a');
+                        link.href = url;
+
+                        // 🔥 FIXED NAME HERE
+                        link.download = 'Atul_Anand_Resume.pdf';
+
+                        document.body.appendChild(link);
+                        link.click();
+
+                        link.remove();
+                        window.URL.revokeObjectURL(url);
+                      } catch (error) {
+                        console.error('Download failed:', error);
+                      }
+                    }}
                     className="btn-outline group flex items-center justify-center"
                   >
                     <Download size={20} className="mr-3 group-hover:animate-bounce" />
-                    <span>Resume</span>
-                  </a>
+                    <span>Download Resume</span>
+                  </button>
                 )}
               </motion.div>
 
