@@ -125,7 +125,7 @@ const DSA = () => {
                         )}
                         {platform.data.ranking && (
                           <p className="text-gray-600 dark:text-gray-400">
-                            <strong>Ranking:</strong> {platform.data.ranking}
+                            <strong>Rating:</strong> {platform.data.ranking}
                           </p>
                         )}
                         {platform.data.badges && platform.data.badges.length > 0 && (

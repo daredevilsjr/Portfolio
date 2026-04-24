@@ -189,7 +189,7 @@ const About = () => {
                       <h3 className="text-xl font-semibold text-gray-900 dark:text-gray-100">
                         {exp.position}
                       </h3>
-                      <p className="text-primary-600 font-medium">{exp.company}</p>
+                      <p className="text-yellow-400 font-medium">{exp.company}</p>
                     </div>
                     <div className="flex items-center text-gray-600 dark:text-gray-400 mt-2 md:mt-0">
                       <Calendar size={16} className="mr-2" />
@@ -240,7 +240,7 @@ const About = () => {
                       <h3 className="text-xl font-semibold text-gray-900 dark:text-gray-100">
                         {edu.degree}
                       </h3>
-                      <p className="text-primary-600 font-medium">{edu.institution}</p>
+                      <p className="text-yellow-400 font-medium">{edu.institution}</p>
                     </div>
                     <div className="flex items-center text-gray-600 dark:text-gray-400 mt-2 md:mt-0">
                       <Calendar size={16} className="mr-2" />
