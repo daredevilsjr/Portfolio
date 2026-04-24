@@ -9,7 +9,14 @@ const Footer = () => {
     { icon: Instagram, href: 'https://instagram.com/atulraajpoot', label: 'Instagram' },
     { icon: Mail, href: 'mailto:atulanand05241@gmail.com', label: 'Email' },
   ];
-
+  const quickLinks = [
+    { name: 'Home', path: '/' },
+    { name: 'About', path: '/about' },
+    { name: 'Projects', path: '/projects' },
+    { name: 'DSA/CP', path: '/dsa' },
+    { name: 'Blog', path: '/blog' },
+    { name: 'Contact', path: '/contact' },
+  ];
   return (
     <footer className="bg-gray-50 dark:bg-dark-800 border-t border-gray-200 dark:border-dark-700">
       <div className="container-max section-padding">
@@ -29,13 +36,13 @@ const Footer = () => {
               Quick Links
             </h4>
             <div className="grid grid-cols-2 gap-2">
-              {['Home', 'About', 'Projects', 'DSA/CP', 'Blog', 'Contact'].map((link) => (
+              {quickLinks.map((link) => (
                 <a
-                  key={link}
-                  href={`/${link.toLowerCase().replace('/', '')}`}
+                  key={link.name}
+                  href={link.path}
                   className="text-gray-600 dark:text-gray-400 hover:text-primary-600 transition-colors"
                 >
-                  {link}
+                  {link.name}
                 </a>
               ))}
             </div>
