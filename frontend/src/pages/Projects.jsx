@@ -104,11 +104,16 @@ const Projects = () => {
                 <select
                   value={selectedTech}
                   onChange={(e) => setSelectedTech(e.target.value)}
-                  className="input pl-10 appearance-none"
+                  className="input pl-10 bg-gray-800 text-white border border-gray-600 focus:border-yellow-400 focus:outline-none"
                 >
-                  <option value="">All Technologies</option>
-                  {allTechnologies.map(tech => (
-                    <option key={tech} value={tech}>{tech}</option>
+                  <option value="" className="bg-gray-800 text-white">
+                    All Technologies
+                  </option>
+
+                  {allTechnologies.map((tech) => (
+                    <option key={tech} value={tech} className="bg-gray-800 text-white">
+                      {tech}
+                    </option>
                   ))}
                 </select>
               </div>
