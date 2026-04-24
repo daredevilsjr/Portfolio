@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { motion } from 'framer-motion';
-import { Mail, Phone, MapPin, Send, Github, Linkedin, Twitter } from 'lucide-react';
+import { Mail, Phone, MapPin, Send, Github, Linkedin, Instagram } from 'lucide-react';
 import api from '../utils/api';
 import { showToast } from '../utils/toast';
 import Button from '../components/UI/Button';
@@ -48,8 +48,8 @@ const Contact = () => {
     {
       icon: Phone,
       title: 'Phone',
-      value: '+91 91748 XXXXX',
-      href: 'tel:+919174800000'
+      value: '+91 74880 61317',
+      href: 'tel:+917488061317'
     },
     {
       icon: MapPin,
@@ -62,18 +62,18 @@ const Contact = () => {
   const socialLinks = [
     {
       icon: Github,
-      href: 'https://github.com/yourusername',
+      href: 'https://github.com/daredevilsjr',
       label: 'GitHub'
     },
     {
       icon: Linkedin,
-      href: 'https://linkedin.com/in/yourusername',
+      href: 'https://www.linkedin.com/in/atul-anand-iiitbh/',
       label: 'LinkedIn'
     },
     {
-      icon: Twitter,
-      href: 'https://twitter.com/yourusername',
-      label: 'Twitter'
+      icon: Instagram,
+      href: 'https://instagram.com/atulraajpoot',
+      label: 'Instagram'
     }
   ];
 
