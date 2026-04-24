@@ -12,9 +12,9 @@ router.get('/', async (req, res) => {
     if (!profile) {
       // Create default profile if none exists
       profile = new Profile({
-        name: 'Your Name',
-        title: 'MERN Stack Developer',
-        bio: 'Passionate full-stack developer with expertise in MERN stack and strong problem-solving skills.',
+        name: 'Atul Anand',
+        title: 'Software Developer',
+        bio: 'Passionate software developer with expertise in MERN stack and strong problem-solving skills.',
         socialLinks: {},
         skills: [],
         experience: [],

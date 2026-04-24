@@ -81,10 +81,10 @@ const About = () => {
                   {profile?.name || 'Your Name'}
                 </h2>
                 <h3 className="text-xl text-primary-600 font-medium">
-                  {profile?.title || 'MERN Stack Developer'}
+                  {profile?.title || 'Software Developer'}
                 </h3>
                 <p className="text-lg text-gray-600 dark:text-gray-400 leading-relaxed">
-                  {profile?.bio || 'Passionate full-stack developer with expertise in MERN stack and strong problem-solving skills.'}
+                  {profile?.bio || 'Passionate software developer with expertise in MERN stack and strong problem-solving skills.'}
                 </p>
               </div>
 

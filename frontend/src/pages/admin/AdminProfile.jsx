@@ -295,7 +295,7 @@ const AdminProfile = () => {
                 name="title"
                 value={formData.title}
                 onChange={handleInputChange}
-                placeholder="e.g., MERN Stack Developer"
+                placeholder="e.g., Software Developer"
                 required
               />
             </div>

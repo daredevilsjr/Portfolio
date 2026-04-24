@@ -93,7 +93,7 @@ const Home = () => {
                   transition={{ delay: 0.6, duration: 0.8 }}
                   className="text-2xl md:text-4xl text-white/80 font-display font-semibold"
                 >
-                  {profile?.title || 'MERN Stack Developer'}
+                  {profile?.title || 'Software Developer'}
                 </motion.h2>
                 
                 <motion.p 

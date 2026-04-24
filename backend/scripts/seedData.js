@@ -17,8 +17,8 @@ const seedData = async () => {
     if (!existingProfile) {
       const profileData = {
         name: 'Your Name',
-        title: 'MERN Stack Developer & Problem Solver',
-        bio: 'Passionate full-stack developer with expertise in MERN stack and strong problem-solving skills. I love creating efficient, scalable web applications and solving complex algorithmic challenges.',
+        title: 'Software Developer & Problem Solver',
+        bio: 'Passionate software developer with expertise in MERN stack and strong problem-solving skills. I love creating efficient, scalable web applications and solving complex algorithmic challenges.',
         socialLinks: {
           github: 'https://github.com/yourusername',
           linkedin: 'https://linkedin.com/in/yourusername',
@@ -43,7 +43,7 @@ const seedData = async () => {
           {
             company: 'Tech Company',
             position: 'Full Stack Developer',
-            duration: '2023 - Present',
+            duration: '2025 - Present',
             description: 'Developing and maintaining web applications using MERN stack. Collaborated with cross-functional teams to deliver high-quality software solutions.'
           }
         ],
@@ -51,7 +51,7 @@ const seedData = async () => {
           {
             institution: 'Your University',
             degree: 'Bachelor of Technology in Computer Science',
-            duration: '2019 - 2023',
+            duration: '2022 - 2026',
             description: 'Focused on software engineering, data structures, algorithms, and web development.'
           }
         ]
@@ -149,7 +149,7 @@ const seedData = async () => {
           description: 'A comprehensive guide to building full-stack applications with MongoDB, Express, React, and Node.js',
           externalUrl: 'https://medium.com/@yourusername/mern-stack-guide',
           platform: 'Medium',
-          publishedDate: new Date('2023-06-15'),
+          publishedDate: new Date('2025-06-15'),
           tags: ['MERN', 'React', 'Node.js', 'MongoDB'],
           featured: true
         },
@@ -158,7 +158,7 @@ const seedData = async () => {
           description: 'Tips and strategies for improving your problem-solving skills in competitive programming',
           externalUrl: 'https://dev.to/yourusername/dsa-mastery',
           platform: 'Dev.to',
-          publishedDate: new Date('2023-07-20'),
+          publishedDate: new Date('2025-07-20'),
           tags: ['DSA', 'Algorithms', 'Problem Solving'],
           featured: false
         }

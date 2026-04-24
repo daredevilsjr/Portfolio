@@ -18,7 +18,7 @@ const Footer = () => {
           <div className="space-y-4">
             <h3 className="text-2xl font-bold gradient-text">Portfolio</h3>
             <p className="text-gray-600 dark:text-gray-400">
-              MERN Stack Developer passionate about creating amazing web experiences 
+              Software developer passionate about creating amazing web experiences 
               and solving complex problems.
             </p>
           </div>
