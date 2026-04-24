@@ -1,5 +1,3 @@
-Here’s a **clean, direct copy-paste README (no weird formatting, no ids, ready for GitHub)** 👇
-
 ---
 
 # 🚀 MERN Stack Portfolio – Full Stack Developer Dashboard
@@ -11,8 +9,8 @@ It includes a secure admin dashboard, authentication system, project/blog manage
 
 ## 🌟 Live Demo
 
-* 🌐 Frontend: *(add your deployed link)*
-* ⚙️ Backend API: *(add your backend URL)*
+* 🌐 Frontend: *(deployed link)*
+* ⚙️ Backend API: *(backend URL)*
 * 🔐 Admin Panel: `/admin`
 
 ---
