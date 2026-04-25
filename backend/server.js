@@ -66,7 +66,7 @@ app.get('/api/health', (req, res) => {
 });
 // Warm-up route to prevent cold starts
 app.get('/api/warmup', (req, res) => {
-  res.json({ message: 'Server warmed up', timestamp: new Date().toISOString() });
+  res.send('Server is warm 🔥');
 });
 
 // Error handling middleware

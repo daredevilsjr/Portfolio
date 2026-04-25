@@ -6,7 +6,7 @@ import axios from 'axios';
  */
 
 const BACKEND_URL = process.env.NODE_ENV === 'production'
-  ? process.env.RENDER_EXTERNAL_URL || 'http://localhost:5000'
+  ? 'https://your-backend.onrender.com'
   : 'http://localhost:5000';
 
 const WARMUP_INTERVAL = 14 * 60 * 1000; // 14 minutes

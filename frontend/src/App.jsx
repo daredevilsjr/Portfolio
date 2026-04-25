@@ -18,8 +18,20 @@ import ProtectedRoute from './components/ProtectedRoute';
 import ThemeInitializer from './components/ThemeInitializer';
 import Privacy from './pages/Privacy';
 import Terms from './pages/Terms';
+import { useEffect } from "react";
 
 function App() {
+  useEffect(() => {
+    const pingServer = () => {
+      fetch("https://your-backend.onrender.com/api/warmup")
+        .catch(() => {});
+    };
+
+    pingServer(); // first load
+    const interval = setInterval(pingServer, 5 * 60 * 1000);
+
+    return () => clearInterval(interval);
+  }, []);  
   return (
     <Router>
       <ThemeInitializer />
